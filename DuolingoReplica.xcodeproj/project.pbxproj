@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FE5ED4E32EC22C8A0080A0E7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FE5ED4E22EC22C8A0080A0E7 /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FE1F72F42EBB639600D4FCAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		FE1F72FD2EBB639700D4FCAC /* DuolingoReplicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuolingoReplicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FE1F73652EBE430500D4FCAC /* Exceptions for "DuolingoReplica" folder in "DuolingoReplica" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FE1F72E52EBB639500D4FCAC /* DuolingoReplica */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FE1F72E82EBB639500D4FCAC /* DuolingoReplica */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FE1F73652EBE430500D4FCAC /* Exceptions for "DuolingoReplica" folder in "DuolingoReplica" target */,
+			);
 			path = DuolingoReplica;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5ED4E32EC22C8A0080A0E7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				FE1F72E82EBB639500D4FCAC /* DuolingoReplica */,
 				FE1F72F62EBB639600D4FCAC /* DuolingoReplicaTests */,
 				FE1F73002EBB639700D4FCAC /* DuolingoReplicaUITests */,
+				FE5ED4E12EC22C8A0080A0E7 /* Frameworks */,
 				FE1F72E72EBB639500D4FCAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				FE1F72FD2EBB639700D4FCAC /* DuolingoReplicaUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FE5ED4E12EC22C8A0080A0E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = DuolingoReplica;
 			packageProductDependencies = (
+				FE5ED4E22EC22C8A0080A0E7 /* Lottie */,
 			);
 			productName = DuolingoReplica;
 			productReference = FE1F72E62EBB639500D4FCAC /* DuolingoReplica.app */;
@@ -195,6 +222,10 @@
 			);
 			mainGroup = FE1F72DD2EBB639500D4FCAC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FE292A402EC2089600FDFB87 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				FE5ED4E02EC22C650080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE1F72E72EBB639500D4FCAC /* Products */;
 			projectDirPath = "";
@@ -400,6 +431,7 @@
 				DEVELOPMENT_TEAM = M7Q7C6LFK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuolingoReplica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,17 +440,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(SRCROOT)",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = claudia.DuolingoReplica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,6 +469,7 @@
 				DEVELOPMENT_TEAM = M7Q7C6LFK9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuolingoReplica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,17 +478,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(SRCROOT)",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = claudia.DuolingoReplica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -578,6 +621,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE292A402EC2089600FDFB87 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		FE5ED4E02EC22C650080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE5ED4E22EC22C8A0080A0E7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE292A402EC2089600FDFB87 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE1F72DE2EBB639500D4FCAC /* Project object */;
 }
