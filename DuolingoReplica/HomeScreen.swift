@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import Lottie
+import UIKit
 
 struct HomeScreen: View {
     @State private var startOnboarding = false
@@ -128,6 +129,7 @@ struct GreenButtonLabel: View {
                         .scaleEffect(x: 1, y: 1.1)
                         .foregroundColor(.white)
                 )
+            
         }
         .frame(width: 330, height: 46)
     }

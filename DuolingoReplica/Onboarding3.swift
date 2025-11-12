@@ -94,7 +94,12 @@ struct Onboarding4: View {
                     .frame(height: 2)
                     .padding(.bottom, 16)
                 
-                Button(action: next) {
+                Button(action: {
+                    let generator = UIImpactFeedbackGenerator(style: .light)
+                    generator.impactOccurred()
+                    
+                    next()
+                }) {
                     GreenButtonLabel(title: "Continue")
                 }
                 .buttonStyle(Subtle3DStyle())

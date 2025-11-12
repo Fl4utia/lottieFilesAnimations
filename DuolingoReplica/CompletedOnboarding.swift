@@ -63,8 +63,13 @@ struct Onboarding5: View {
                 
                 
                 // Green button at the bottom
-                Button(action: finish) {
-                    GreenButtonLabel(title: "Continue")
+                Button(action: {
+                    let generator = UIImpactFeedbackGenerator(style: .light)
+                    generator.impactOccurred()
+                    
+                    finish()
+                }) {
+                    GreenButtonLabel(title: "Start learning")
                 }
                 .buttonStyle(Subtle3DStyle())
                 .padding(.horizontal, 16)
