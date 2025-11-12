@@ -1,13 +1,13 @@
 {
-  "originHash" : "b47e950525b5b0ca045c1c692cbee4bc0d823f0776c3157ecb5f5cf90ed13aef",
+  "originHash" : "a36eb17ef2ffa118fb85fa28c622c4915c99c6751dbdf9381717e2e8fefae0ac",
   "pins" : [
     {
-      "identity" : "lottie-ios",
+      "identity" : "dotlottie-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "location" : "https://github.com/LottieFiles/dotlottie-ios",
       "state" : {
-        "revision" : "a004050748dc197c56256a14dca49a035d74726c",
-        "version" : "4.5.2"
+        "branch" : "main",
+        "revision" : "f88d32df0e24b5dcefca052d0ea3ba0062e910bc"
       }
     },
     {
@@ -17,6 +17,24 @@
       "state" : {
         "revision" : "04f2fd18cc9404a0a0917265a449002674f24ec9",
         "version" : "4.5.2"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "2053b120767c42a70bcba21095f34e4cfb54a75d",
+        "version" : "5.21.3"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI",
+      "state" : {
+        "revision" : "0e331457ca9af2f0b08bcaa138a91ffb907b004f",
+        "version" : "3.1.4"
       }
     }
   ],

@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>UIAppFonts</key>
-<array>
-    <string>Feather_Bold.ttf</string>
-	<string>DIN_Next_Medium.ttf</string>
-	<string>DIN_Next Rounded_Bold.ttf</string>
-	<string>DIN_Next_Rounded_Regular.ttf</string>
-</array>
+	<array>
+		<string>DIN_Next Rounded_Bold.ttf</string>
+		<string>DIN_Next_Medium.ttf</string>
+		<string>DIN_Next_Rounded_Regular.ttf</string>
+		<string>Feather_Bold.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -18,9 +18,9 @@ struct HomeScreen: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 170, height: 80)
-                    .padding(.top, 10)
+                    .padding(.top, 60)
 
-                Spacer(minLength: 90)
+                Spacer(minLength: 40)
 
                 // Characters
                 Image("characters")
@@ -35,7 +35,7 @@ struct HomeScreen: View {
                     .multilineTextAlignment(.center)
                     .font(.custom("DINNextRoundedLTW04-Regular", size: 17))
 
-                Spacer(minLength: 60)
+                Spacer(minLength: 40)
                 
                 // Buttons at the bottom
                 VStack(spacing: 16) {
@@ -83,8 +83,9 @@ struct HomeScreen: View {
                 .padding(.bottom, 40)
             }
             // Navigation
-            .navigationDestination(isPresented: $startOnboarding) {
+            .fullScreenCover(isPresented: $startOnboarding) {
                 OnboardingView()
+                    .transition(.identity)
             }
         }
     }

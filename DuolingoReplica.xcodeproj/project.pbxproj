@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE5ED4E32EC22C8A0080A0E7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FE5ED4E22EC22C8A0080A0E7 /* Lottie */; };
+		FE0741572EC4A5EC00A40F7A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = FE0741562EC4A5EC00A40F7A /* SDWebImageSwiftUI */; };
+		FE4E2FED2EC379F600794FE2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FE4E2FEC2EC379F600794FE2 /* Lottie */; };
+		FE4E2FFC2EC47A4A00794FE2 /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = FE4E2FFB2EC47A4A00794FE2 /* DotLottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FE5ED5BA2EC336AC0080A0E7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FE1F72E62EBB639500D4FCAC /* DuolingoReplica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuolingoReplica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1F72F32EBB639600D4FCAC /* DuolingoReplicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuolingoReplicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,7 +49,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FE1F73652EBE430500D4FCAC /* Exceptions for "DuolingoReplica" folder in "DuolingoReplica" target */ = {
+		FE5ED5BB2EC337A20080A0E7 /* Exceptions for "DuolingoReplica" folder in "DuolingoReplica" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -47,7 +62,7 @@
 		FE1F72E82EBB639500D4FCAC /* DuolingoReplica */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FE1F73652EBE430500D4FCAC /* Exceptions for "DuolingoReplica" folder in "DuolingoReplica" target */,
+				FE5ED5BB2EC337A20080A0E7 /* Exceptions for "DuolingoReplica" folder in "DuolingoReplica" target */,
 			);
 			path = DuolingoReplica;
 			sourceTree = "<group>";
@@ -69,7 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5ED4E32EC22C8A0080A0E7 /* Lottie in Frameworks */,
+				FE0741572EC4A5EC00A40F7A /* SDWebImageSwiftUI in Frameworks */,
+				FE4E2FED2EC379F600794FE2 /* Lottie in Frameworks */,
+				FE4E2FFC2EC47A4A00794FE2 /* DotLottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +113,7 @@
 				FE1F72E82EBB639500D4FCAC /* DuolingoReplica */,
 				FE1F72F62EBB639600D4FCAC /* DuolingoReplicaTests */,
 				FE1F73002EBB639700D4FCAC /* DuolingoReplicaUITests */,
-				FE5ED4E12EC22C8A0080A0E7 /* Frameworks */,
+				FE5ED5B32EC3366E0080A0E7 /* Frameworks */,
 				FE1F72E72EBB639500D4FCAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +128,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE5ED4E12EC22C8A0080A0E7 /* Frameworks */ = {
+		FE5ED5B32EC3366E0080A0E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -128,6 +145,7 @@
 				FE1F72E22EBB639500D4FCAC /* Sources */,
 				FE1F72E32EBB639500D4FCAC /* Frameworks */,
 				FE1F72E42EBB639500D4FCAC /* Resources */,
+				FE5ED5BA2EC336AC0080A0E7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,7 +156,9 @@
 			);
 			name = DuolingoReplica;
 			packageProductDependencies = (
-				FE5ED4E22EC22C8A0080A0E7 /* Lottie */,
+				FE4E2FEC2EC379F600794FE2 /* Lottie */,
+				FE4E2FFB2EC47A4A00794FE2 /* DotLottie */,
+				FE0741562EC4A5EC00A40F7A /* SDWebImageSwiftUI */,
 			);
 			productName = DuolingoReplica;
 			productReference = FE1F72E62EBB639500D4FCAC /* DuolingoReplica.app */;
@@ -223,8 +243,9 @@
 			mainGroup = FE1F72DD2EBB639500D4FCAC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				FE292A402EC2089600FDFB87 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				FE5ED4E02EC22C650080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				FE5ED5B62EC336A10080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				FE4E2FFA2EC47A3F00794FE2 /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
+				FE0741552EC4A5DC00A40F7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE1F72E72EBB639500D4FCAC /* Products */;
@@ -440,7 +461,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"$(SRCROOT)",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = claudia.DuolingoReplica;
@@ -478,7 +498,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"$(SRCROOT)",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = claudia.DuolingoReplica;
@@ -623,15 +642,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FE292A402EC2089600FDFB87 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		FE0741552EC4A5DC00A40F7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.5.2;
+				minimumVersion = 3.1.4;
 			};
 		};
-		FE5ED4E02EC22C650080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+		FE4E2FFA2EC47A3F00794FE2 /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		FE5ED5B62EC336A10080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
 			requirement = {
@@ -642,10 +669,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FE5ED4E22EC22C8A0080A0E7 /* Lottie */ = {
+		FE0741562EC4A5EC00A40F7A /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FE292A402EC2089600FDFB87 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = FE0741552EC4A5DC00A40F7A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		FE4E2FEC2EC379F600794FE2 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE5ED5B62EC336A10080A0E7 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		FE4E2FFB2EC47A4A00794FE2 /* DotLottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE4E2FFA2EC47A3F00794FE2 /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
+			productName = DotLottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

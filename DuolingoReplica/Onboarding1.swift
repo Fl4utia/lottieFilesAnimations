@@ -15,6 +15,7 @@ struct Onboarding1: View {
     var body: some View {
         
         VStack(spacing: 5) {
+
             Spacer()
             
             // Rounded rectangle we should add alabel inide thats ays "Hi, I'm Duo"
@@ -53,7 +54,7 @@ struct Onboarding1: View {
                 
                 // Green button at the bottom
                 Button(action: next) {
-                    GreenButtonLabel(title: "GET STARTED")
+                    GreenButtonLabel(title: "Continue")
                 }
                 .buttonStyle(Subtle3DStyle())
                 .padding(.horizontal, 16)
