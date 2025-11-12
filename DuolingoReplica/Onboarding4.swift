@@ -1,22 +1,22 @@
 //
-//  Onboarding3.swift
+//  Onboarding4.swift
 //  DuolingoReplica
 //
-//  Created by Claudia Tobias on 09/11/25.
+//  Created by Claudia Tobias on 11/11/25.
 //
-
 import SwiftUI
 import Lottie
-
-struct Onboarding4: View {
+struct Onboarding3: View {
     var next: () -> Void
     @State private var selectedOption: String? = nil
     
     let options = [
-        ("5 min / day", "Casual"),
-        ("10 min / day", "Regual"),
-        ("15 min / day", "Serious"),
-        ("20 min / day", "Intense"),
+        ("Prepare for travel", "reason_1"),
+        ("Boost my career", "reason_2"),
+        ("Support my education", "reason_3"),
+        ("Connect with people", "reason_4"),
+        ("Just for fun", "reason_5"),
+        ("Spend time productively", "reason_6")
     ]
 
     //Command option -> para foldear el codigo
@@ -35,7 +35,7 @@ struct Onboarding4: View {
                             SpeechBubble()
                                 .stroke(Color(red: 0.9, green: 0.9, blue: 0.9), lineWidth: 2)
 
-                            Text("What is your daily learning goal?")
+                            Text("Why are you learning a new language?")
                                 .padding(10)
                                 .font(.custom("DIN_Next Rounded_Bold", size: 17))
                                 .foregroundColor(.black)
@@ -51,16 +51,18 @@ struct Onboarding4: View {
                             Button(action: {
                                 selectedOption = option.0
                             }) {
-                                HStack {
+                                HStack(spacing: 12) {
+                                    Image(option.1)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 36, height: 36)
+                                        .padding(4)
+                                    
                                     Text(option.0)
                                         .font(.custom("DINNextRoundedLTW04-Medium", size: 18))
                                         .foregroundColor(.black)
-                                    Spacer()
-                                    Text(option.1)
-                                        .font(.custom("DINNextRoundedLTW04-Regular", size: 18))
-                                        .foregroundColor(.black)
                                     
-                        
+                                    Spacer()
                                 }
                                 .padding(.horizontal, 16)
                                 .frame(width: 345, height: 80)
@@ -80,14 +82,14 @@ struct Onboarding4: View {
                     Spacer()
                         .frame(minHeight: 30)
                 }
-                    .padding(.top, 50)
                     .scrollIndicators(.hidden)
 
                     
                 .frame(maxWidth: .infinity)
             }
-                .padding(.top, 5)
+                .padding(.top , 2)
             
+            // Fixed bottom section
             VStack(spacing: 0) {
                 Rectangle()
                     .fill(Color(red: 0.9, green: 0.9, blue: 0.9))
@@ -100,6 +102,8 @@ struct Onboarding4: View {
                 .buttonStyle(Subtle3DStyle())
                 .padding(.horizontal, 16)
                 .padding(.bottom, 5)
+                .disabled(selectedOption == nil)
+                .opacity(selectedOption == nil ? 0.5 : 1.0)
             }
             .background(Color(UIColor.systemBackground))
         }
@@ -108,5 +112,5 @@ struct Onboarding4: View {
 }
 
 #Preview {
-    Onboarding4(next: {})
+    Onboarding3(next: {})
 }
